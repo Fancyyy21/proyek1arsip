@@ -117,7 +117,7 @@
           <select class="form-control" name="level" required>
              <option value="" hidden>-- Pilih Level --</option>
              <option value="admin">Admin</option>
-             <option value="pimpinan">Pimpinan</option>
+             <option value="pimpinan">pimpinan</option>
           </select>
         </div>
 
@@ -174,7 +174,7 @@
           <label>Level</label>
           <select class="form-control" name="level" required>
              <option <?php if($d['level']=="admin") echo "selected"; ?> value="admin">Admin</option>
-             <option <?php if($d['level']=="pimpinan") echo "selected"; ?> value="pimpinan">Pimpinan</option>
+             <option <?php if($d['level']=="pimpinan") echo "selected"; ?> value="pimpinan">pimpinan</option>
           </select>
         </div>
 

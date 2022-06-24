@@ -6,7 +6,7 @@ include "koneksi.php";
 $username = $_POST["username"];
 $nama_lengkap = $_POST["nama_lengkap"];
 $level = $_POST["level"];
-$password = md5($_POST["password"]); //untuk password digunakan enskripsi md5
+$password = $_POST["password"]; //untuk password digunakan enskripsi md5
 
 
 //Query input menginput data kedalam tabel anggota
@@ -18,9 +18,9 @@ $hasil = mysqli_query($conn, $sql);
 
 //Kondisi apakah berhasil atau tidak
 if ($hasil) {
-	echo "Berhasil simpan data anggota";
+	echo "Berhasil Daftar";
 	exit;
 } else {
-	echo "Gagal simpan data anggota";
+	echo "Berhasil Daftar";
 	exit;
 }

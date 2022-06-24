@@ -124,6 +124,8 @@ include '../koneksi.php';
 							</span>
 							<h4 class="text-section" style="color: white;">Components</h4>
 						</li>
+
+
 						<?php if($_SESSION['level'] == 'admin') { ?>
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#base">
@@ -148,6 +150,8 @@ include '../koneksi.php';
 						</li>
 					<?php } ?>
 
+
+
 						<?php if($_SESSION['level'] == 'admin' OR $_SESSION['level'] == 'pimpinan') {?>
 						<li class="nav-item">
 							<a data-toggle="collapse" href="#surat">
@@ -171,6 +175,9 @@ include '../koneksi.php';
 							</div>
 						</li>
 					<?php } ?>
+
+
+
 
 					<?php if($_SESSION['level'] == 'admin') { ?>
 						<li class="nav-item">
